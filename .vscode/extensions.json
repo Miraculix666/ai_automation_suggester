@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.pylint",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens",
+        "editorconfig.editorconfig"
+    ]
+}
