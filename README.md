@@ -6,14 +6,15 @@
 
 # AI Automation Suggester
 
-[![Validate with hassfest](https://img.shields.io/github/actions/workflow/status/ITSpecialist111/ai_automation_suggester/hassfest.yaml?style=for-the-badge)]()
-[![HACS Validation](https://img.shields.io/github/actions/workflow/status/ITSpecialist111/ai_automation_suggester/validate.yaml?style=for-the-badge)]()
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/ITSpecialist111/ai_automation_suggester?style=for-the-badge)]()
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)]()
+An AI-powered Home Assistant custom integration that suggests automations based on your entities. The Ultimate "Matt" mode.
 
 An **AI‑powered assistant** for Home Assistant that leverages large language models to understand your unique smart home environment – your entities, areas, devices, **and** existing automations. It proposes intelligent, actionable YAML suggestions tailored to your specific setup, helping you unlock your home's full potential.
 
----
+- Scans entities periodically to detect new devices.
+- Uses AI (e.g., OpenAI's GPT-4o) to generate automation suggestions.
+- Provides a frontend interface for users to review and accept suggestions.
+- Allows users to map placeholders to actual entities upon acceptance.
+- Adds accepted automations to Home Assistant.
 
 ## ✨ Why does this exist? (Purpose and Problem Statement)
 
@@ -34,7 +35,11 @@ The AI Automation Suggester integration solves these challenges by acting as a p
 2.  **Identify opportunities:** Spot gaps, synergies, and potential improvements for energy saving, security, comfort, and convenience.
 3.  **Draft ready-to-paste YAML:** Provide concrete, tailored automation ideas as YAML snippets you can review, tweak, and implement directly.
 
-**In essence,** this integration turns the complexity of a large Home Assistant environment into actionable insights and tangible benefits, guiding you toward a more efficient, comfortable, and secure smart home.
+1. In Home Assistant, go to **Overview** > **Edit Dashboard**.
+2. Click **Add Card** and choose **Manual**.
+3. Add the following configuration:
+4. To Add another card:
+   type: 'custom:ai-suggester-card'
 
 ---
 
